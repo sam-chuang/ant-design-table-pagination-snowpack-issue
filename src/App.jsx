@@ -3,11 +3,12 @@ import './App.css';
 import 'antd/dist/antd.css';
 import { Table, Pagination } from 'antd';
 
+// use pagination={false} can show the table correctly
 function App() {
   return (
     <div className="App">
       {/* <Pagination defaultCurrent={1} total={50} /> */}
-      <Table columns={columns} pagination={false} dataSource={data} />
+      <Table columns={columns} dataSource={data} />
     </div>
   );
 }

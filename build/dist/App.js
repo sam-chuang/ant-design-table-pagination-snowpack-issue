@@ -1,14 +1,13 @@
 import React from '../web_modules/react.js';
 import './App.css.proxy.js';
 import '../web_modules/antd/dist/antd.css.proxy.js';
-import { Table, Pagination } from '../web_modules/antd.js';
+import { Table, Pagination } from '../web_modules/antd.js'; // use pagination={false} can show the table correctly
 
 function App() {
   return /*#__PURE__*/React.createElement("div", {
     className: "App"
   }, /*#__PURE__*/React.createElement(Table, {
     columns: columns,
-    pagination: false,
     dataSource: data
   }));
 }
