@@ -1,0 +1,1 @@
+# ant-design-table-pagination-snowpack-issue
