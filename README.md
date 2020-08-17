@@ -16,5 +16,4 @@ Steps:
 
 1. npm install
 2. npm start
-3. open browser
-4.
+3. open browser page
