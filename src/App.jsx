@@ -1,26 +1,46 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import { Table, Pagination } from 'antd';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Pagination defaultCurrent={1} total={50} /> */}
+      <Table columns={columns} pagination={false} dataSource={data} />
     </div>
   );
 }
+
+const columns = [
+  {
+    title: 'Name (all screens)',
+    dataIndex: 'name',
+    key: 'name',
+    render: (text) => <a>{text}</a>,
+  },
+  {
+    title: 'Age (medium screen or bigger)',
+    dataIndex: 'age',
+    key: 'age',
+    responsive: ['md'],
+  },
+  {
+    title: 'Address (large screen or bigger)',
+    dataIndex: 'address',
+    key: 'address',
+    responsive: ['lg'],
+  },
+];
+
+const data = [
+  {
+    key: '1',
+    name: 'John Brown',
+    age: 32,
+    address: 'New York No. 1 Lake Park',
+  },
+];
 
 export default App;
