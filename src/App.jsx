@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
 import { Table, Pagination } from 'antd';

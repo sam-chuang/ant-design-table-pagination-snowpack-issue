@@ -1,5 +1,4 @@
-import React, { useState } from '../web_modules/react.js';
-import logo from './logo.svg.proxy.js';
+import React from '../web_modules/react.js';
 import './App.css.proxy.js';
 import '../web_modules/antd/dist/antd.css.proxy.js';
 import { Table, Pagination } from '../web_modules/antd.js';
